@@ -1,0 +1,24 @@
+# base conversion
+
+### bc
+let's try to use bc (binary calculator). 
+
+use bc to convert input base to output base
+>>	echo 'ibase=16; obase=8 FEF33D9 | bc
+>>	  > 1773631731
+
+we can also use base64
+so just 
+>>	base64 file
+
+### python 
+
+#!/usr/bin/python2.7
+
+import binascii
+
+def hexto64(str):
+    h = str
+    hex = h.decode("hex")
+    base = binascii.b2a_base64(hex)
+    return base
