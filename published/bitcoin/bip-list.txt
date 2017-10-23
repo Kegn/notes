@@ -1,0 +1,627 @@
+==> bip-0001 <==
+
+==> bip-0001.mediawiki <==
+<pre>
+  BIP: 1
+  Title: BIP Purpose and Guidelines
+  Status: Accepted
+  Type: Standards Track
+  Created: 2011-08-19
+</pre>
+
+==What is a BIP?==
+
+
+==> bip-0010.mediawiki <==
+<pre>
+  BIP: 10
+  Title: Multi-Sig Transaction Distribution
+  Author: Alan Reiner
+  Status: Withdrawn 
+  Type: Informational
+  Created: 2011-10-28
+</pre>
+
+A multi-signature transaction is one where a certain number of Bitcoins are "encumbered" with more than one recipient address.  The subsequent transaction that spends these coins will require each party involved (or some subset, depending on the script), to see the proposed transaction and sign it with their private key.  This necessarily requires collaboration between all parties -- to propose a distribution of encumbered funds, collect signatures from all necessary participants, and then broadcast the completed transaction.
+
+==> bip-0011.mediawiki <==
+<pre>
+  BIP: 11
+  Title: M-of-N Standard Transactions
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2011-10-18
+  Post-History: 2011-10-02
+</pre>
+
+
+==> bip-0012.mediawiki <==
+<pre>
+  BIP: 12
+  Title: OP_EVAL
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Withdrawn
+  Type: Standards Track
+  Created: 2011-10-18
+</pre>
+
+==Abstract==
+
+==> bip-0013.mediawiki <==
+<pre>
+  BIP: 13
+  Title: Address Format for pay-to-script-hash
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Final
+  Type: Standards Track
+  Created: 2011-10-18
+</pre>
+
+==Abstract==
+
+==> bip-0014.mediawiki <==
+<pre>
+  BIP: 14
+  Title: BIP Protocol Version and User Agent
+  Author: Amir Taaki <genjix@riseup.net>
+          Patrick Strateman <bitcoin-bips@covertinferno.org>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2011-11-10
+  Post-History: 2011-11-02
+</pre>
+
+==> bip-0015.mediawiki <==
+<pre>
+  BIP: 15
+  Title: BIP Aliases
+  Author: Amir Taaki <genjix@riseup.net>
+  Status: Deferred
+  Type: Standards Track
+  Created: 2011-12-10
+</pre>
+
+[[bip-0070.mediawiki|BIP 0070]] (payment protocol) may be seen as the alternative to Aliases.
+
+==> bip-0016 <==
+
+==> bip-0016.mediawiki <==
+<pre>
+  BIP: 16
+  Title: Pay to Script Hash
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Final
+  Type: Standards Track
+  Created: 2012-01-03
+</pre>
+
+==Abstract==
+
+==> bip-0017.mediawiki <==
+<pre>
+  BIP: 17
+  Title: OP_CHECKHASHVERIFY (CHV)
+  Author: Luke Dashjr <luke+bip17@dashjr.org>
+  Status: Withdrawn
+  Type: Standards Track
+  Created: 2012-01-18
+</pre>
+
+==Abstract==
+
+==> bip-0018.mediawiki <==
+<pre>
+  BIP: 18
+  Title: hashScriptCheck
+  Author: Luke Dashjr <luke+bip17@dashjr.org>
+  Status: Draft
+  Type: Standards Track
+  Created: 2012-01-27
+</pre>
+
+==Abstract==
+
+==> bip-0019.mediawiki <==
+<pre>
+  BIP: 19
+  Title: M-of-N Standard Transactions (Low SigOp)
+  Author: Luke Dashjr <luke+bip17@dashjr.org>
+  Status: Draft
+  Type: Standards Track
+  Created: 2012-01-30
+</pre>
+
+==Abstract==
+
+==> bip-0020.mediawiki <==
+<pre>
+  BIP: 20
+  Title: URI Scheme
+  Author: Luke Dashjr <luke+bip@dashjr.org>
+  Status: Replaced
+  Type: Standards Track
+  Created: 2011-01-10
+</pre>
+
+BIP 0020 is based off an earlier document by Nils Schneider. '''And has been replaced by BIP 0021'''
+
+==> bip-0021.mediawiki <==
+<pre>
+  BIP: 21
+  Title: URI Scheme
+  Author: Nils Schneider <nils.schneider@gmail.com>
+          Matt Corallo <bip21@bluematt.me>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2012-01-29
+</pre>
+
+
+==> bip-0022.mediawiki <==
+<pre>
+  BIP: 22
+  Title: getblocktemplate - Fundamentals
+  Author: Luke Dashjr <luke+bip22@dashjr.org>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2012-02-28
+</pre>
+
+==Abstract==
+
+==> bip-0023.mediawiki <==
+<pre>
+  BIP: 23
+  Title: getblocktemplate - Pooled Mining
+  Author: Luke Dashjr <luke+bip22@dashjr.org>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2012-02-28
+</pre>
+
+==Abstract==
+
+==> bip-0030.mediawiki <==
+<pre>
+  BIP: 30
+  Title: Duplicate transactions
+  Author: Pieter Wuille <pieter.wuille@gmail.com>
+  Status: Final
+  Type: Standards Track
+  Created: 2012-02-22
+</pre>
+
+==Abstract==
+
+==> bip-0031.mediawiki <==
+<pre>
+  BIP: 31
+  Title: Pong message
+  Author: Mike Hearn <hearn@google.com>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2012-04-11
+</pre>
+
+==Abstract==
+
+==> bip-0032 <==
+
+==> bip-0032.mediawiki <==
+RECENT CHANGES:
+* (16 Apr 2013) Added private derivation for i ≥ 0x80000000 (less risk of parent private key leakage)
+* (30 Apr 2013) Switched from multiplication by I<sub>L</sub> to addition of I<sub>L</sub> (faster, easier implementation)
+* (25 May 2013) Added test vectors
+* (15 Jan 2014) Rename keys with index ≥ 0x80000000 to hardened keys, and add explicit conversion functions.
+
+<pre>
+  BIP: 32
+  Title: Hierarchical Deterministic Wallets
+  Author: Pieter Wuille
+
+==> bip-0033.mediawiki <==
+<pre>
+  BIP: 33
+  Title: Stratized Nodes
+  Author: Amir Taaki <genjix@riseup.net>
+  Status: Draft
+  Type: Standards Track
+  Created: 2012-05-15
+</pre>
+
+== Abstract ==
+
+==> bip-0034.mediawiki <==
+<pre>
+  BIP: 34
+  Title: Block v2, Height in Coinbase
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2012-07-06
+</pre>
+
+==Abstract==
+
+==> bip-0035.mediawiki <==
+<pre>
+  BIP: 35
+  Title: mempool message
+  Author: Jeff Garzik <jgarzik@exmulti.com>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2012-08-16
+</pre>
+
+==Abstract==
+
+==> bip-0036.mediawiki <==
+<pre>
+  BIP: 36
+  Title: Custom Services
+  Author: Stefan Thomas <justmoon@members.fsf.org>
+  Status: Draft
+  Type: Standards Track
+  Created: 2012-08-03
+</pre>
+
+==Abstract==
+
+==> bip-0037.mediawiki <==
+<pre>
+  BIP: 37
+  Title: Connection Bloom filtering
+  Author: Mike Hearn <hearn@google.com>, Matt Corallo <bip@bluematt.me>
+  Status: Accepted
+  Type: Standards Track
+  Created: 2012-10-24
+</pre>
+
+==Abstract==
+
+==> bip-0038.mediawiki <==
+<pre>
+  BIP: 38
+  Title: Passphrase-protected private key
+  Authors: Mike Caldwell
+           Aaron Voisine <voisine@gmail.com>
+  Status: Draft (Some confusion applies: The announcements for this never made it to the list, so it hasn't had public discussion)
+  Type: Standards Track
+  Created: 2012-11-20
+</pre>
+
+
+==> bip-0039 <==
+
+==> bip-0039.mediawiki <==
+<pre>
+  BIP:     BIP-0039
+  Title:   Mnemonic code for generating deterministic keys
+  Authors: Marek Palatinus <slush@satoshilabs.com>
+           Pavol Rusnak <stick@satoshilabs.com>
+           Aaron Voisine <voisine@gmail.com>
+           Sean Bowe <ewillbefull@gmail.com>
+  Status:  Draft
+  Type:    Standards Track
+  Created: 2013-09-10
+
+==> bip-0042 <==
+
+==> bip-0042.mediawiki <==
+<pre>
+  BIP: 42
+  Title: A finite monetary supply for Bitcoin
+  Author: Pieter Wuille <pieter.wuille@gmail.com>
+  Status: Draft
+  Type: Standards Track
+  Created: 2014-04-01
+</pre>
+
+==Abstract==
+
+==> bip-0043.mediawiki <==
+<pre>
+  BIP:     BIP-0043
+  Title:   Purpose Field for Deterministic Wallets
+  Authors: Marek Palatinus <slush@satoshilabs.com>
+           Pavol Rusnak <stick@satoshilabs.com>
+  Status:  Draft
+  Type:    Standards Track
+  Created: 2014-04-24
+</pre>
+
+
+==> bip-0044.mediawiki <==
+<pre>
+  BIP:     BIP-0044
+  Title:   Multi-Account Hierarchy for Deterministic Wallets
+  Authors: Marek Palatinus <slush@satoshilabs.com>
+           Pavol Rusnak <stick@satoshilabs.com>
+  Status:  Draft
+  Type:    Standards Track
+  Created: 2014-04-24
+</pre>
+
+
+==> bip-0045.mediawiki <==
+<pre>
+  BIP:     BIP-0045
+  Title:   Structure for Deterministic P2SH Multisignature Wallets
+  Authors: Manuel Araoz <manu@bitpay.com>
+           Ryan X. Charles <ryan@bitpay.com>
+           Matias Alejo Garcia <matias@bitpay.com>
+  Status:  Draft
+  Type:    Standards Track
+  Created: 2014-04-25
+</pre>
+
+==> bip-0047 <==
+
+==> bip-0047.mediawiki <==
+<pre>
+  BIP:     47
+  Title:   Reusable Payment Codes for Hierarchical Deterministic Wallets
+  Authors: Justus Ranvier <justus@openbitcoinprivacyproject.org>
+  Status:  Draft
+  Type:    Informational
+  Created: 2015-04-24
+</pre>
+
+==Abstract==
+
+==> bip-0050.mediawiki <==
+<pre>
+  BIP: 50
+  Title: March 2013 Chain Fork Post-Mortem
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Draft
+  Type: Informational
+  Created: 2013-03-20
+</pre>
+
+==What went wrong==
+
+==> bip-0060.mediawiki <==
+<pre>
+  BIP: 60
+  Title: Fixed Length "version" Message (Relay-Transactions Field)
+  Author: Amir Taaki <genjix@riseup.net>
+  Status: Draft
+  Type: Standards Track
+  Created: 2013-06-16
+</pre>
+
+==Abstract==
+
+==> bip-0061.mediawiki <==
+<pre>
+  BIP: 61
+  Title: Reject P2P message
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Final
+  Type: Standards Track
+  Created: 2014-06-18
+</pre>
+
+==Abstract==
+
+==> bip-0062.mediawiki <==
+<pre>
+  BIP: 62
+  Title: Dealing with malleability
+  Author: Pieter Wuille <pieter.wuille@gmail.com>
+  Status: Draft
+  Type: Standards Track
+  Created: 2014-03-12
+</pre>
+
+==Abstract==
+
+==> bip-0064.mediawiki <==
+<pre>
+  BIP: 64
+  Title: getutxo message
+  Author: Mike Hearn <hearn@vinumeris.com>
+  Status: Draft
+  Type: Standards Track
+  Created: 2014-06-10
+</pre>
+
+==Abstract==
+
+==> bip-0065.mediawiki <==
+<pre>
+  BIP: 65
+  Title: OP_CHECKLOCKTIMEVERIFY
+  Author: Peter Todd <pete@petertodd.org>
+  Status: Draft
+  Type: Standards Track
+  Created: 2014-10-01
+</pre>
+
+==Abstract==
+
+==> bip-0066.mediawiki <==
+<pre>
+  BIP: 66
+  Title: Strict DER signatures
+  Author: Pieter Wuille <pieter.wuille@gmail.com>
+  Status: Final
+  Type: Standards Track
+  Created: 2015-01-10
+</pre>
+
+==Abstract==
+
+==> bip-0067.mediawiki <==
+
+<pre>
+  BIP: 67
+  Title: Deterministic Pay-to-script-hash multi-signature addresses through public key sorting
+  Author: Thomas Kerin, Jean-Pierre Rupp, Ruben de Vries
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-02-08
+</pre>
+
+
+==> bip-0068.mediawiki <==
+<pre>
+  BIP: 68
+  Title: Consensus-enforced transaction replacement signalled via sequence numbers
+  Author: Mark Friedenbach <mark@friedenbach.org>
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-05-28
+</pre>
+
+==Abstract==
+
+==> bip-0070 <==
+
+==> bip-0070.mediawiki <==
+<pre>
+  BIP: 70
+  Title: Payment Protocol
+  Authors: Gavin Andresen <gavinandresen@gmail.com>, Mike Hearn <mhearn@bitcoinfoundation.org>
+  Status: Final
+  Type: Standards Track
+  Created: 2013-07-29
+</pre>
+
+==Abstract==
+
+==> bip-0071.mediawiki <==
+<pre>
+  BIP: 71
+  Title: Payment Protocol MIME types
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Final
+  Type: Standards Track
+  Created: 2013-07-29
+</pre>
+
+==Abstract==
+
+==> bip-0072.mediawiki <==
+<pre>
+  BIP: 72
+  Title: bitcoin: uri extensions for Payment Protocol
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Final
+  Type: Standards Track
+  Created: 2013-07-29
+</pre>
+
+==Abstract==
+
+==> bip-0073 <==
+
+==> bip-0073.mediawiki <==
+<pre>
+  BIP: 73
+  Title: Use "Accept" header for response type negotiation with Payment Request URLs
+  Author: Stephen Pair <stephen@bitpay.com>
+  Status: Draft
+  Type: Standards Track
+  Created: 2013-08-27
+</pre>
+
+==Abstract==
+
+==> bip-0101.mediawiki <==
+<pre>
+  BIP: 101
+  Title: Increase maximum block size
+  Author: Gavin Andresen <gavinandresen@gmail.com>
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-06-22
+</pre>
+
+==Abstract==
+
+==> bip-0105.mediawiki <==
+<pre>
+  BIP: 105
+  Title: Consensus based block size retargeting algorithm
+  Author: BtcDrak <btcdrak@gmail.com>
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-08-21
+</pre>
+
+==Abstract==
+
+==> bip-0106.mediawiki <==
+<pre>
+  BIP: 106
+  Title: Dynamically Controlled Bitcoin Block Size Max Cap
+  Author: Upal Chakraborty <bitcoin@upalc.com>
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-08-24
+</pre>
+
+==Abstract==
+
+==> bip-0111.mediawiki <==
+<pre>
+  BIP: 111
+  Title: NODE_BLOOM service bit
+  Author: Matt Corallo <bip@bluematt.me>, Peter Todd <pete@petertodd.org>
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-08-20
+</pre>
+
+== Abstract ==
+
+==> bip-0113.mediawiki <==
+<pre>
+  BIP: 113
+  Title: Median time-past as endpoint for lock-time calculations
+  Author: Thomas Kerin <me@thomaskerin.io>
+          Mark Friedenbach <mark@friedenbach.org>	
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-08-10
+</pre>
+
+
+==> bip-0120.mediawiki <==
+<pre>
+  BIP: 120
+  Title: Proof of Payment
+  Author: Kalle Rosenbaum <kalle@rosenbaum.se>
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-07-28
+</pre>
+
+== Abstract ==
+
+==> bip-0121.mediawiki <==
+<pre>
+  BIP: 121
+  Title: Proof of Payment URI scheme
+  Author: Kalle Rosenbaum <kalle@rosenbaum.se>
+  Status: Draft
+  Type: Standards Track
+  Created: 2015-07-27
+</pre>
+
+== Abstract ==
+
+==> README.mediawiki <==
+People wishing to submit BIPs, first should propose their idea or document to the mailing list. After discussion they should email Greg Maxwell &lt;gmaxwell@gmail.com&gt;. After copy-editing and acceptance, it will be published here.
+
+We are fairly liberal with approving BIPs, and try not to be too involved in decision making on behalf of the community. The exception is in very rare cases of dispute resolution when a decision is contentious and cannot be agreed upon. In those cases, the conservative option will always be preferred.
+
+Having a BIP here does not make it a formally accepted standard until its status becomes Active. For a BIP to become Active requires the mutual consent of the community.
+
+Those proposing changes should consider that ultimately consent may rest with the consensus of the Bitcoin users (see also: [https://en.bitcoin.it/wiki/Economic_majority economic majority]).
+
+{| class="wikitable sortable" style="width: auto; text-align: center; font-size: smaller; table-layout: fixed;"
+!Number
