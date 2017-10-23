@@ -1,12 +1,12 @@
-an-extremely-brief-history-on-c
+brief-history-of-c
 
-# a brief history of c
+## a brief history of c
 
 C is an imperative procedural language. 
 
 It was designed to be compiled using a relatively straightforward compiler, to provide low-level access to memory, to provide language constructs that map efficiently to machine instructions, and to require minimal run-time support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. 
 
-##  ANSI C and ISO C
+###  ANSI C and ISO C
 
 During the late 1970s and 1980s, versions of C were implemented for a wide variety of mainframe computers, minicomputers, and microcomputers, including the IBM PC, as its popularity began to increase significantly.
 
